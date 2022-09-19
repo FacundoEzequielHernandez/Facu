@@ -1,0 +1,15 @@
+#container
+{
+    width: 100%;
+    background-color: rgb(54, 52, 61);
+    height: 700px;
+}
+
+ 
+{
+    color: white;
+}
+.navbar-nav
+{
+    color: white;
+}
