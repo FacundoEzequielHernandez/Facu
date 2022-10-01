@@ -1,60 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>Trabajo Practico Integrador</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     </head>
+
+
     <body>
-
-<div id="container">
-        <!-- BARRA NAVEGACIÓN-->
-     
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
+        <header>
+             <div id="container">   
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                      <div class="container-fluid">
             
-              <a class="navbar-brand" href="#">
-                <img src="img/codoacodo.png" alt="Logo" width="100" height="60" class="d-inline-block align-text-middle">
-                Conf Bs As
-              </a>
-              <!-- Barra justificada-->
-            <form class="d-flex">
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" style="color: white" aria-current="page" href="#" style="color: white">La conferencia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: rgb(129, 119, 119" >Los Oradores</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: rgb(129, 119, 119">El lugar y la fecha</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: rgb(129, 119, 119)">Conviértete en orador</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: rgb(95, 161, 95);" >Comprar tickets</a>
-                  </li>
-                </ul>
-            </form>
-              </div>
+                       <a class="navbar-brand" href="#">
+                           <img src="img/codoacodo.png" alt="Logo" width="100" height="60" class="d-inline-block align-text-middle">
+                            Conf Bs As
+                      </a>
+                     
+                                 <!-- Barra justificada-->
+                        <form class="d-flex">
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="boton" aria-current="page" href="#" >La conferencia</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" >Los Oradores</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" >El lugar y la fecha</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" >Conviértete en orador</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" id="boton1" >Comprar tickets</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </form>      
+                      </div>
+                </nav>
+        </header>
+          
+
+
+        <main>
+            <img id="ba1" src="img/ba1.jpg" alt="ciudad">
+            <div class="conf">
+                <h1><a id="confciudad">Conf Bs As</a></h1>
             </div>
-          </nav>
-          <picture>
-            
-            <img src="img/ba1.jpg" class="img-fluid" alt="none">
-
-          </picture>
-    
-        
+            <div class="texto">
+                <h4>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento
+                    y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del
+                    evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te
+                    esperamos!</h4>
+            </div>
+            <br>
+            <div class="buttons">
+                <button type="button" class="btn btn-outline-light btn-lg">Quiero ser orador</button>
+                <button type="button" class="btn btn-success btn-lg"><a id="tickets">Comprar tickets</a></button>
+            </div>
+            <h6 style="text-align: center; font-weight: lighter;">CONOCE A LOS</h6>
+        <h1 style="text-align: center;"><a id="oradores">ORADORES</a></h1>
+        <br>
+        <div class="allcards">
+            <div class="card1">
+                <img src="img/steve.jpg" class="card-img-top" alt="steve">
+                <div class="card-body">
+                    <button type="button" class="btn btn-warning"
+                        style="font-weight: 750; padding: 2px; font-size: 12px; padding-top: 1px; padding-bottom: 1px;">JavaScript</button>
+                    <button type="button" class="btn btn-info"
+                        style="background-color: rgba(39,158,175,255); color: white; font-weight: 750; padding: 3px; font-size: 12px; padding-top: 1px; padding-bottom: 1px;">React</button>
+                    <h5 class="card-title">Steve Jobs</h5>
+                    <p class="card-text" style="font-size: 15.5px; line-height: 25px; ">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste!
+                        Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam
+                        magni ratione!</p>
+                </div>
+            </div>
+            <div class="card2">
+                <img src="img/bill.jpg" class="card-img-top" alt="bill">
+                <div class="card-body">
+                    <button type="button" class="btn btn-warning"
+                        style="font-weight: 750; padding: 2px; font-size: 12px; padding-top: 1px; padding-bottom: 1px;">JavaScript</button>
+                    <button type="button" class="btn btn-info"
+                        style="background-color: rgba(39,158,175,255); color: white; font-weight: 750; padding: 3px; font-size: 12px; padding-top: 1px; padding-bottom: 1px;">React</button>
+                    <h5 class="card-title">Bill Gates</h5>
+                    <p class="card-text" style="font-size: 15.5px; line-height: 25px; ">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste!
+                        Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam
+                        magni ratione!</p>
+                </div>
+            </div>
+            <div class="card3">
+                <img src="img/ada.jpeg" class="card-img-top" alt="ada">
+                <div class="card-body">
+                    <button type="button" class="btn btn-secondary"
+                        style="font-weight: 750; padding: 2px; font-size: 12px; padding-top: 1px; padding-bottom: 1px;">Negocios</button>
+                    <button type="button" class="btn btn-danger"
+                        style="color: white; font-weight: 750; padding: 3px; font-size: 12px; padding-top: 1px; padding-bottom: 1px;">Startups</button>
+                    <h5 class="card-title">Ada Lovelace</h5>
+                    <p class="card-text" style="font-size: 15.5px; line-height: 25px; ">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste!
+                        Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam
+                        magni ratione!</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container" style="margin: 0%; padding: 0%">
+            <div class="col-6 themed-grid-col">
+                <img src="img/honolulu.jpg" class="hawaii" alt="hawaii" style="width: 100%">
+            </div>
+            <div class="col-6 themed-grid-col text">
+                <h1 class="bsasoctubre">Bs As - Octubre</h1>
+                <p class="bsastexto">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los
+                    Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque
+                    el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y
+                    el condado de Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad
+                    (aproximadamente 600km² de superficie).</p>
+                <br>
+                <button type="button" class="btn btn-outline-light"
+                    style="margin-left: 20px; margin-top: 5px; margin-bottom: 10px;">Conocé más</button>
+            </div>
+        </div>
+        <h6 style="text-align: center; font-weight: lighter;">CONVIÉRTETE EN UN</h6>
+        <h1 style="text-align: center;"><a id="convierteteenorador">ORADOR</a></h1>
+        </main>
     </div>
+        <h5 style="text-align: center; font-weight: 400; margin-bottom: 20px;">Anótate como orador para dar una <a
+            href="" style="text-decoration: none; color: black; border-bottom:2px dotted black;">charla ignite</a>.
+        Cuéntanos de qué quieres hablar!</h5>
+    <div class="row">
+        <div class="col nombre">
+            <input type="text" class="form-control" placeholder="Nombre" style="font-size: 20px;"
+                aria-label="First name">
+        </div>
+        <div class="col apellido">
+            <input type="text" class="form-control" placeholder="Apellido" style="font-size: 20px;"
+                aria-label="Last name">
+        </div>
+    </div>
+    <br>
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+            style="height: 200px"></textarea>
+        <label for="floatingTextarea2" style="font-size: 25px; color: rgba(154,151,158,255)">Sobre qué quieres
+            hablar?</label>
+    </div>
+    <h6 class="titulo">Recuerda incluir un título para tu charla</h6>
+    <br>
+    <button type="button" class="btn btn-success enviar">Enviar</button>
+</main>
+</body>
+<footer>
+    <ul class="footer">
+        <li class="preguntas"><a href="#preguntas" style="text-decoration: none; color: white"> Preguntas frecuentes</a>
+        </li>
+        <li class="contacto"><a href="#contacto" style="text-decoration: none; color: white">
+                Contáctanos</a>
+        </li>
+        <li class="prensa">
+            <a href="#prensa" style="text-decoration: none; color: white"> Prensa</a>
+        </li>
+        <li class="conferencias"><a href="#conferencias" style="text-decoration: none; color: white">Conferencias</a>
+        </li>
+        <li class="condiciones"><a href="terminosycondiciones" style="text-decoration: none; color: white"> Términos y
+                condiciones</a>
+        </li>
+        <li class="privacidad"><a href="#privacidad" style="text-decoration: none; color: white">
+                Privacidad</a>
+        </li>
+        <li class="estudiantes"><a href="#estudiantes" style="text-decoration: none; color: white">
+                Estudiantes</a>
+        </li>
+    </ul>
+</footer>
 
-
-
-
+    
 
 
 
